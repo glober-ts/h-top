@@ -1104,12 +1104,12 @@ document.addEventListener('DOMContentLoaded', () => {
       imageFit: 'cover',
       textHtml: '<h2>お知らせ</h2><p>期間限定のイベントを開催中です。ぜひご覧ください。</p>',
       popupClickable: true,
-      linkUrl: 'https://www.rakuten.ne.jp/gold/bene/',
+      linkUrl: 'https://shop.bene-bene.com/',
       linkTarget: '_self',
       buttons: [
         {
           label: '詳しく見る',
-          url: 'https://www.rakuten.ne.jp/gold/bene/',
+          url: 'https://shop.bene-bene.com/',
           target: '_self'
         },
         {
