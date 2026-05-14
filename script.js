@@ -53,6 +53,8 @@
   const getSearchInput = () => document.getElementById('searchModalInput');
   const getSearchPriceMinInput = () => document.getElementById('searchPriceMin');
   const getSearchPriceMaxInput = () => document.getElementById('searchPriceMax');
+  const getSearchGoodsNoInput = () => document.getElementById('searchGoodsNo');
+  const getSearchTagInput = () => document.getElementById('searchTagInput');
 
   const syncDrawerState = () => {
     const drawer = getDrawer();
@@ -182,7 +184,10 @@
     const searchInput = getSearchInput();
     const searchPriceMinInput = getSearchPriceMinInput();
     const searchPriceMaxInput = getSearchPriceMaxInput();
+    const searchGoodsNoInput = getSearchGoodsNoInput();
+    const searchTagInput = getSearchTagInput();
     const searchForm = searchInput ? searchInput.form : null;
+    const searchTagButtons = searchModal ? Array.from(searchModal.querySelectorAll('.searchModal__tagBtn[data-tag]')) : [];
 
     const sanitizePrice = (value) => {
       if(value === null || value === undefined) return '';
@@ -191,10 +196,33 @@
       return digitsOnly;
     };
 
+    const getActiveSearchTag = () => {
+      const activeButton = searchTagButtons.find((button) => button.classList.contains('is-active'));
+      return activeButton ? (activeButton.getAttribute('data-tag') || '') : '';
+    };
+
+    const syncSearchTagInput = (tagValue) => {
+      if(!searchTagInput) return;
+      searchTagInput.value = tagValue || '';
+      searchTagInput.disabled = !tagValue;
+    };
+
+    const selectSearchTag = (selectedButton) => {
+      const tagValue = selectedButton ? (selectedButton.getAttribute('data-tag') || '') : '';
+      searchTagButtons.forEach((button) => {
+        const isActive = button === selectedButton;
+        button.classList.toggle('is-active', isActive);
+        button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+      syncSearchTagInput(tagValue);
+    };
+
     const getSearchValues = (keyword) => {
       const rawKeyword = typeof keyword === 'string' ? keyword : (searchInput ? searchInput.value : '');
       const trimmedKeyword = rawKeyword.trim();
       const keywordValue = trimmedKeyword || '';
+      const goodsNo = searchGoodsNoInput ? searchGoodsNoInput.value.trim() : '';
+      const tagValue = getActiveSearchTag();
 
       let minPrice = sanitizePrice(searchPriceMinInput ? searchPriceMinInput.value : '');
       let maxPrice = sanitizePrice(searchPriceMaxInput ? searchPriceMaxInput.value : '');
@@ -206,30 +234,35 @@
         maxPrice = swappedMax;
       }
 
-      return { keywordValue, minPrice, maxPrice };
+      return { keywordValue, goodsNo, tagValue, minPrice, maxPrice };
     };
 
-    const buildSearchUrl = ({ keywordValue, minPrice, maxPrice }) => {
-      const baseUrl = 'https://search.rakuten.co.jp/search/mall/';
+    const buildSearchUrl = ({ keywordValue, goodsNo, tagValue, minPrice, maxPrice }) => {
+      const baseUrl = 'https://shop.bene-bene.com/fs/rosecut/GoodsSearchList.html';
       const searchParams = new URLSearchParams();
-      searchParams.set('sid', '209075');
-      if(minPrice) searchParams.set('min', minPrice);
-      if(maxPrice) searchParams.set('max', maxPrice);
-      const searchQuery = searchParams.toString();
-      const keywordPath = keywordValue ? `${encodeURIComponent(keywordValue)}/` : '';
-      return `${baseUrl}${keywordPath}?${searchQuery}`;
+      searchParams.set('_e_k', 'Ａ');
+      if(tagValue) searchParams.set('tag', tagValue);
+      if(goodsNo) searchParams.set('goodsno', goodsNo);
+      if(keywordValue) searchParams.set('keyword', keywordValue);
+      if(minPrice) searchParams.set('minprice', minPrice);
+      if(maxPrice) searchParams.set('maxprice', maxPrice);
+      return `${baseUrl}?${searchParams.toString()}`;
     };
 
     const goSearch = (keyword) => {
       const values = getSearchValues(keyword);
       const nextUrl = buildSearchUrl(values);
       if(searchInput) searchInput.value = values.keywordValue;
+      if(searchGoodsNoInput){
+        searchGoodsNoInput.value = values.goodsNo;
+      }
       if(searchPriceMinInput){
         searchPriceMinInput.value = values.minPrice;
       }
       if(searchPriceMaxInput){
         searchPriceMaxInput.value = values.maxPrice;
       }
+      syncSearchTagInput(values.tagValue);
       closeSearch();
       window.location.href = nextUrl;
     };
@@ -260,6 +293,16 @@
       searchOverlay.addEventListener('click', (e) => {
         e.preventDefault();
         closeSearch();
+      });
+    }
+
+    if(searchTagButtons.length){
+      syncSearchTagInput(getActiveSearchTag());
+      searchTagButtons.forEach((button) => {
+        button.addEventListener('click', (e) => {
+          e.preventDefault();
+          selectSearchTag(button);
+        });
       });
     }
 
