@@ -34,16 +34,23 @@ window.BENE_UI = {
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
+
+
+<!-- gtag.js を1回だけ読み込み -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GGFW8D1JP3"></script>
+
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
 
-  ga('create', 'UA-23686114-18', 'auto');
-  ga('send', 'pageview');
+  gtag('js', new Date());
 
+  // 複数のアカウントをここでまとめて初期化
+  gtag('config', 'G-GGFW8D1JP3');
+  gtag('config', 'AW-785442588');
+  gtag('config', 'AW-967234388');
 </script>
+
 
 <!-- favicon -->
 <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
@@ -64,10 +71,10 @@ window.BENE_UI = {
 <button aria-label="検索" class="icoBtn icoBtn--search" id="searchFocusBtn" title="検索" type="button">
 <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><line x1="16" x2="21" y1="16" y2="21"></line></svg>
 </button>
-<a aria-label="お問い合わせ" class="icoBtn" href="https://ask.step.rakuten.co.jp/rms/mall/pa/ask/vc?__event=PA02_000_001&ask_text=%A5%B7%A5%E7%A5%C3%A5%D7%A4%CB%BC%C1%CC%E4%A4%B9%A4%EB&shopurl=bene&shop_bid=209075&shop_name=%A5%D9%A1%BC%A5%CD%A1%A6%A5%D9%A1%BC%A5%CD&myshop=0" title="お問い合わせ" target="_blank" rel="noopener">
+<a aria-label="お問い合わせ" class="icoBtn" href="https://shop.bene-bene.com/benebene/contact/" title="お問い合わせ" target="_blank" rel="noopener">
 <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M5 13.5v-1a7 7 0 0114 0v1"></path><rect height="4" rx="1.2" width="2.8" x="3.8" y="12.5"></rect><rect height="4" rx="1.2" width="2.8" x="17.4" y="12.5"></rect><path d="M18.8 16.5a3.8 3.8 0 01-3.8 3.8H12"></path><circle cx="10.8" cy="20.3" r="1"></circle></svg>
 </a>
-<a aria-label="カート" class="icoBtn" href="https://t3.basket.step.rakuten.co.jp/rms/mall/bs/cartall/?shop_bid=209075&l2-id=shop_header_cart" title="カート" target="_blank" rel="noopener">
+<a aria-label="カート" class="icoBtn" href="https://shop.bene-bene.com/fs/rosecut/ShoppingCart.html" title="カート" target="_blank" rel="noopener">
 <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="9" cy="19" r="1.6"></circle><circle cx="18" cy="19" r="1.6"></circle><path d="M3 4h2l2.3 10.4a1.8 1.8 0 001.8 1.4h8.5a1.8 1.8 0 001.8-1.5L22 8H6.3"></path></svg>
 </a>
 
@@ -132,25 +139,25 @@ window.BENE_UI = {
 <img alt="新作ジュエリー" fetchpriority="high" loading="eager" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/sb_260511newitem.jpg"/>
 </picture>
 </a>
-<a class="heroCard" href="https://shop.bene-bene.com/sp_loose.html" target="_blank" rel="noopener">
+<a class="heroCard" href="https://shop.bene-bene.com/loose/" target="_blank" rel="noopener">
 <picture>
 <source media="(min-width: 980px)" srcset="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/b_260507loose_980.jpg"/>
 <img alt="厳選ルースジュエリー" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/sb_260507loose.jpg"/>
 </picture>
 </a>
-<a class="heroCard" href="https://item.rakuten.co.jp/bene/c/0000001774/?s=4" target="_blank" rel="noopener">
+<a class="heroCard" href="https://shop.bene-bene.com/fs/rosecut/c/specialjewelry" target="_blank" rel="noopener">
 <picture>
 <source media="(min-width: 980px)" srcset="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/b_toku_260430_980.jpg"/>
 <img alt="特選ジュエリー" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/sb_260430tokusen.jpg"/>
 </picture>
 </a>
-<a class="heroCard" href="https://item.rakuten.co.jp/bene/c/0000002037/?s=4&i=1" target="_blank" rel="noopener">
+<a class="heroCard" href="https://shop.bene-bene.com/fs/rosecut/c/l_marche" target="_blank" rel="noopener">
 <picture>
 <source media="(min-width: 980px)" srcset="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/b_marche_260430.jpg"/>
 <img alt="限定マルシェ" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/sb_260430marche.jpg"/>
 </picture>
 </a>
-<a class="heroCard" href="https://item.rakuten.co.jp/bene/c/0000001720/" target="_blank" rel="noopener">
+<a class="heroCard" href="https://shop.bene-bene.com/fs/rosecut/c/resale" target="_blank" rel="noopener">
 <picture>
 <source media="(min-width: 980px)" srcset="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/b_gentei_260428.jpg"/>
 <img alt="限定再販ジュエリー" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/sb_260428resale.jpg"/>
@@ -162,13 +169,13 @@ window.BENE_UI = {
 <img alt="新作ジュエリー" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/sb_260427newitem.jpg"/>
 </picture>
 </a>
-<a class="heroCard" href="https://item.rakuten.co.jp/bene/c/0000001771/" target="_blank" rel="noopener">
+<a class="heroCard" href="https://shop.bene-bene.com/fs/rosecut/c/sokunou#plist" target="_blank" rel="noopener">
 <picture>
-<source media="(min-width: 980px)" srcset="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/b_250520_sokur.jpg"/>
-<img alt="あす楽対応ジュエリー" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/sb_250520sokur.jpg"/>
+<source media="(min-width: 980px)" srcset="https://shop.bene-bene.com/bene_img/b_250520_sokuh.jpg"/>
+<img alt="即納ジュエリー" loading="lazy" src="https://shop.bene-bene.com/bene_img/sb_250520sokuh.jpg"/>
 </picture>
 </a>
-<a class="heroCard" href="https://item.rakuten.co.jp/bene/c/0000001433/" target="_blank" rel="noopener">
+<a class="heroCard" href="https://shop.bene-bene.com/fs/rosecut/c/0000001433" target="_blank" rel="noopener">
 <picture>
 <source media="(min-width: 980px)" srcset="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/b_arlequin4.jpg"/>
 <img alt="アルルカンジュエリー" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/sb_arleruin.jpg"/>
@@ -249,7 +256,7 @@ window.BENE_UI = {
 <span class="bannerSectionHead__label">Easy order</span>
 <span class="bannerSectionHead__title">簡単につくる</span>
 </div>
-<a class="topBannerBlock__link" href="https://item.rakuten.co.jp/bene/c/0000002164/" target="_blank" rel="noopener">
+<a class="topBannerBlock__link" href="https://shop.bene-bene.com/fs/rosecut/c/easy_custom" target="_blank" rel="noopener">
 <img alt="お手持ちのルースからベーネのデザインで仕立てる かんたんカスタムオーダー" loading="lazy" src="assets/easy_custom.jpg"/>
 </a>
 </div>
@@ -286,7 +293,7 @@ window.BENE_UI = {
 <div aria-label="人気ジュエリーランキング" class="rankingRow horizontalScroll" role="list">
 <a class="productCard rankingCard" href="https://shop.bene-bene.com/fs/rosecut/tp-596-rub-d-bb" role="listitem">
 <span class="rankingNo">No.1</span>
-<img alt="非加熱ルビー ペアシェイプ ダイヤモンド ペンダントトップ「朝露」" loading="lazy" src="https://shop.bene-bene.com/r-cabinet/item/tp-596-rub-d-bb-01.jpg"/>
+<img alt="非加熱ルビー ペアシェイプ ダイヤモンド ペンダントトップ「朝露」" loading="lazy" src="https://www.rakuten.ne.jp/gold/bene/r-cabinet/item/tp-596-rub-d-bb-01.jpg"/>
 <p><span class="productCardTitle">非加熱ルビー ペアシェイプ ダイヤモンド ペンダントトップ「朝露」</span><span class="yen">￥39,820（税込）</span></p>
 </a>
 <a class="productCard rankingCard" href="https://shop.bene-bene.com/fs/rosecut/gsr-49-f" role="listitem">
@@ -331,7 +338,7 @@ window.BENE_UI = {
 </a>
 <a class="productCard rankingCard" href="https://shop.bene-bene.com/fs/rosecut/te-342-bsf-bb" role="listitem">
 <span class="rankingNo">No.10</span>
-<img alt="ハンマーテクスチャースタッド一粒シングルピアス「オッチ」" loading="lazy" src="https://shop.bene-bene.com/r-cabinet/item/te-342-bsf-bb-c1.jpg"/>
+<img alt="ハンマーテクスチャースタッド一粒シングルピアス「オッチ」" loading="lazy" src="https://www.rakuten.ne.jp/gold/bene/r-cabinet/item/te-342-bsf-bb-c1.jpg"/>
 <p><span class="productCardTitle">ハンマーテクスチャースタッド一粒シングルピアス「オッチ」</span><span class="yen">￥11,000（税込）</span></p>
 </a>
 </div>
@@ -341,7 +348,7 @@ window.BENE_UI = {
 <section class="section sectionGradient featureShowcaseSection" data-reveal="">
 <div class="wrap">
 <div class="featureShowcaseGrid">
-<a class="featureShowcaseCard" href="https://item.rakuten.co.jp/bene/c/0000001664/" target="_blank" rel="noopener">
+<a class="featureShowcaseCard" href="https://shop.bene-bene.com/fs/rosecut/c/0000001136" target="_blank" rel="noopener">
 <img alt="ローズカットの輝きが映える限定ジュエリー" class="featureShowcaseImage" loading="lazy" src="assets/b_rosecut.jpg"/>
 <span class="featureShowcaseContent">
 <span class="featureShowcaseLabel">ローズカットダイヤ</span>
@@ -349,7 +356,7 @@ window.BENE_UI = {
 <span class="featureShowcaseText">いにしえの美を感じる、<br>やさしい煌めき<br></span>
 </span>
 </a>
-<a class="featureShowcaseCard" href="https://item.rakuten.co.jp/bene/c/0000001424/" target="_blank" rel="noopener">
+<a class="featureShowcaseCard" href="https://shop.bene-bene.com/fs/rosecut/c/gr619" target="_blank" rel="noopener">
 <img alt="希少石をあしらったレアアイテムコレクション" class="featureShowcaseImage" loading="lazy" src="assets/b_rareitem.jpg"/>
 <span class="featureShowcaseContent">
 <span class="featureShowcaseLabel">レアストーン</span>
@@ -357,7 +364,7 @@ window.BENE_UI = {
 <span class="featureShowcaseText">心を満たす、<br>希少なストーンアイテム<br></span>
 </span>
 </a>
-<a class="featureShowcaseCard" href="https://item.rakuten.co.jp/bene/c/0000001433/" target="_blank" rel="noopener">
+<a class="featureShowcaseCard" href="https://shop.bene-bene.com/fs/rosecut/c/0000001433" target="_blank" rel="noopener">
 <img alt="旅するジュエリーアルルカン" class="featureShowcaseImage" loading="lazy" src="assets/b_arlquin.jpg"/>
 <span class="featureShowcaseContent">
 <span class="featureShowcaseLabel">アルルカン</span>
@@ -365,7 +372,7 @@ window.BENE_UI = {
 <span class="featureShowcaseText">視線を惹きつける、<br>アートピース</span>
 </span>
 </a>
-<a class="featureShowcaseCard" href="https://item.rakuten.co.jp/bene/c/0000001748/" target="_blank" rel="noopener">
+<a class="featureShowcaseCard" href="https://shop.bene-bene.com/fs/rosecut/c/pinkdiamond" target="_blank" rel="noopener">
 <img alt="ピンクダイヤが主役の華やかなジュエリー" class="featureShowcaseImage" loading="lazy" src="assets/b_pinkd.jpg"/>
 <span class="featureShowcaseContent">
 <span class="featureShowcaseLabel">ピンクダイヤ</span>
@@ -453,7 +460,7 @@ window.BENE_UI = {
 <h2 class="h2 sectionTitle">1点ものジュエリー</h2>
 <p class="sectionLead sectionLead--shelf">同じものに出会えない、一期一会の輝き。</p>
 </div>
-<a class="more sectionMore viewMoreLink" href="https://shop.bene-bene.com/sp_loose.html" target="_blank" rel="noopener"><span class="viewMoreLink__label">View more</span><span class="viewMoreLink__text">一覧を見る</span><span aria-hidden="true" class="viewMoreLink__arrow">→</span></a>
+<a class="more sectionMore viewMoreLink" href="https://shop.bene-bene.com/fs/rosecut/c/naruhaya" target="_blank" rel="noopener"><span class="viewMoreLink__label">View more</span><span class="viewMoreLink__text">一覧を見る</span><span aria-hidden="true" class="viewMoreLink__arrow">→</span></a>
 </div>
 <div class="carousel">
 <button aria-label="前へ" class="carBtn prev" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M15 18l-6-6 6-6"></path></svg></button>
@@ -521,7 +528,7 @@ window.BENE_UI = {
 <h2 class="h2 sectionTitle">厳選ルース</h2>
 <p class="sectionLead sectionLead--shelf">石から選ぶ、ベーネベーネのジュエリー。</p>
 </div>
-<a class="more sectionMore viewMoreLink" href="https://shop.bene-bene.com/sp_loose.html" target="_blank" rel="noopener"><span class="viewMoreLink__label">View more</span><span class="viewMoreLink__text">一覧を見る</span><span aria-hidden="true" class="viewMoreLink__arrow">→</span></a>
+<a class="more sectionMore viewMoreLink" href="https://shop.bene-bene.com/loose/" target="_blank" rel="noopener"><span class="viewMoreLink__label">View more</span><span class="viewMoreLink__text">一覧を見る</span><span aria-hidden="true" class="viewMoreLink__arrow">→</span></a>
 </div>
 <div class="carousel">
 <button aria-label="前へ" class="carBtn prev" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M15 18l-6-6 6-6"></path></svg></button>
@@ -683,7 +690,7 @@ window.BENE_UI = {
 <h2 class="h2 sectionTitle">限定再販アイテム</h2>
 <p class="sectionLead sectionLead--shelf">もう一度出会えた、人気のジュエリー。</p>
 </div>
-<a class="more sectionMore viewMoreLink" href="https://item.rakuten.co.jp/bene/c/0000002037/?s=4&i=1" target="_blank" rel="noopener"><span class="viewMoreLink__label">View more</span><span class="viewMoreLink__text">一覧を見る</span><span aria-hidden="true" class="viewMoreLink__arrow">→</span></a>
+<a class="more sectionMore viewMoreLink" href="https://shop.bene-bene.com/fs/rosecut/c/resale" target="_blank" rel="noopener"><span class="viewMoreLink__label">View more</span><span class="viewMoreLink__text">一覧を見る</span><span aria-hidden="true" class="viewMoreLink__arrow">→</span></a>
 </div>
 <div class="carousel">
 <button aria-label="前へ" class="carBtn prev" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M15 18l-6-6 6-6"></path></svg></button>
@@ -759,22 +766,22 @@ window.BENE_UI = {
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">派手ではないのに、心に残る。静かな黄金色をまとう、大人に似合う睡蓮の輝き。リング・ペンダント・ピアスが新登場</span><span class="newsItem__text newsItem__text--sp">ゴールデンダンビュライト新作3点</span></div>
 </a>
 
-<a href="https://shop.bene-bene.com/sp_loose.html" class="newsItem" role="listitem" target="_blank" rel="noopener">
+<a href="https://shop.bene-bene.com/loose/" class="newsItem" role="listitem" target="_blank" rel="noopener">
 <div class="newsItem__meta"><time class="newsItem__date" datetime="2026-05-07">2026.05.07</time><span class="newsItem__category">【厳選ルース】</span></div>
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">透明感の奥に青と緑が交差する、神秘の希少石グランディディエライト。出会いを逃したくない一点ものが１１点新登場</span><span class="newsItem__text newsItem__text--sp">グランディディエライト11点</span></div>
 </a>
 
-<a href="https://item.rakuten.co.jp/bene/c/0000001774/?s=4&i=1" class="newsItem" role="listitem" target="_blank" rel="noopener">
+<a href="https://shop.bene-bene.com/fs/rosecut/c/specialjewelry&i=1" class="newsItem" role="listitem" target="_blank" rel="noopener">
 <div class="newsItem__meta"><time class="newsItem__date" datetime="2026-04-30">2026.04.30</time><span class="newsItem__category">【特選ﾙｰｽｼﾞｭｴﾘｰ】</span></div>
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">大粒だからこそ味わえる色の奥行き。タンザナイトの魅力を堪能できるリング＆ペンダントが新登場。</span><span class="newsItem__text newsItem__text--sp">タンザナイト新作2点</span></div>
 </a>
 
-<a href="https://item.rakuten.co.jp/bene/c/0000002037/?s=4&i=1" class="newsItem" role="listitem" target="_blank" rel="noopener">
+<a href="https://shop.bene-bene.com/fs/rosecut/c/l_marche" class="newsItem" role="listitem" target="_blank" rel="noopener">
 <div class="newsItem__meta"><time class="newsItem__date" datetime="2026-04-30">2026.04.30</time><span class="newsItem__category">【限定マルシェ】</span></div>
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">ひと彫りごとに表情を宿す、川口氏の彫りが魅せるピンクサファイアとグリーンガーネットリングが新登場</span><span class="newsItem__text newsItem__text--sp">川口氏彫りリング新作</span></div>
 </a>
 
-<a href="https://item.rakuten.co.jp/bene/c/0000001720/" class="newsItem" role="listitem" target="_blank" rel="noopener">
+<a href="https://shop.bene-bene.com/fs/rosecut/c/resale" class="newsItem" role="listitem" target="_blank" rel="noopener">
 <div class="newsItem__meta"><time class="newsItem__date" datetime="2026-04-28">2026.04.28</time><span class="newsItem__category">【限定再販】</span></div>
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">ローズカットのやわらかな輝きに、アメシストの淡い紫とピンクトルマリンの優しい彩りが連なる人気のスペッキオが再販です</span><span class="newsItem__text newsItem__text--sp">人気のスペッキオ再販</span></div>
 </a>
@@ -784,12 +791,12 @@ window.BENE_UI = {
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">“私のため”と“魅せるため”。内に寄り添うリングと、印象を纏うペンダント、ふたつのカメオが叶える、理想の存在感が新登場</span><span class="newsItem__text newsItem__text--sp">選べるシェルカメオ新作2点</span></div>
 </a>
 
-<a href="https://item.rakuten.co.jp/bene/c/0000001774/?s=4" class="newsItem" role="listitem" target="_blank" rel="noopener">
+<a href="https://shop.bene-bene.com/fs/rosecut/c/specialjewelry" class="newsItem" role="listitem" target="_blank" rel="noopener">
 <div class="newsItem__meta"><time class="newsItem__date" datetime="2026-04-23">2026.04.23</time><span class="newsItem__category">【特選ﾙｰｽｼﾞｭｴﾘｰ】</span></div>
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">海のように澄むアクアマリン、夕陽を宿すマラヤガーネット、若葉のようなペリドットの美しさが際立つリングが３点新登場。</span><span class="newsItem__text newsItem__text--sp">彩りリング新作3点</span></div>
 </a>
 
-<a href="https://shop.bene-bene.com/sp_loose.html" class="newsItem" role="listitem" target="_blank" rel="noopener">
+<a href="https://shop.bene-bene.com/loose/" class="newsItem" role="listitem" target="_blank" rel="noopener">
 <div class="newsItem__meta"><time class="newsItem__date" datetime="2026-04-22">2026.04.22</time><span class="newsItem__category">【厳選ルース】</span></div>
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">このサイズ、この色、この透明感。一目で心を奪う、20mm超の大粒ハート。二度と出会えないかもしれない輝きが７点新登場</span><span class="newsItem__text newsItem__text--sp">大粒ハートルース7点</span></div>
 </a>
@@ -799,17 +806,17 @@ window.BENE_UI = {
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">華やかすぎないのに印象的。大人の魅力を引き立てる、静かな煌めきのブルーリング＆ピアスが２点新登場</span><span class="newsItem__text newsItem__text--sp">ブルージュエリー新作2点</span></div>
 </a>
 
-<a href="https://item.rakuten.co.jp/bene/c/0000002037/?s=4&i=1" class="newsItem" role="listitem" target="_blank" rel="noopener">
+<a href="https://shop.bene-bene.com/fs/rosecut/c/l_marche" class="newsItem" role="listitem" target="_blank" rel="noopener">
 <div class="newsItem__meta"><time class="newsItem__date" datetime="2026-04-17">2026.04.17</time><span class="newsItem__category">【限定マルシェ】</span></div>
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">やわらかな光のダイヤに瑞々しく輝くデマントイドガーネット、そして印象を決めるルビー。個性が引き立つ2つのリングが新登場</span><span class="newsItem__text newsItem__text--sp">個性派リング新作2点</span></div>
 </a>
 
-<a href="https://shop.bene-bene.com/sp_loose.html" class="newsItem" role="listitem" target="_blank" rel="noopener">
+<a href="https://shop.bene-bene.com/loose/" class="newsItem" role="listitem" target="_blank" rel="noopener">
 <div class="newsItem__meta"><time class="newsItem__date" datetime="2026-04-16">2026.04.16</time><span class="newsItem__category">【厳選ルース】</span></div>
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">黒い内包と金の針が織りなす景色が、静かに惹きつける表情を宿すフラワースタールチル。5点限りのご紹介です。</span><span class="newsItem__text newsItem__text--sp">フラワースタールチル5点</span></div>
 </a>
 
-<a href="https://item.rakuten.co.jp/bene/c/0000001774/?s=4" class="newsItem" role="listitem" target="_blank" rel="noopener">
+<a href="https://shop.bene-bene.com/fs/rosecut/c/specialjewelry" class="newsItem" role="listitem" target="_blank" rel="noopener">
 <div class="newsItem__meta"><time class="newsItem__date" datetime="2026-04-10">2026.04.10</time><span class="newsItem__category">【特選ﾙｰｽｼﾞｭｴﾘｰ】</span></div>
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">透き通るアクアミストと、やさしく色づくペールアクア。異なる青を楽しめるブルージルコンのペンダントとピアスが新登場</span><span class="newsItem__text newsItem__text--sp">ブルージルコン新作2点</span></div>
 </a>
@@ -819,12 +826,12 @@ window.BENE_UI = {
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">一粒の気品、色彩の遊び心、優美な存在感。異なる魅力を持つ3つのトップカラーモルガナイトのリングが３点新登場</span><span class="newsItem__text newsItem__text--sp">モルガナイトリング3点</span></div>
 </a>
 
-<a href="https://shop.bene-bene.com/sp_loose.html" class="newsItem" role="listitem" target="_blank" rel="noopener">
+<a href="https://shop.bene-bene.com/loose/" class="newsItem" role="listitem" target="_blank" rel="noopener">
 <div class="newsItem__meta"><time class="newsItem__date" datetime="2026-04-06">2026.04.06</time><span class="newsItem__category">【厳選ルース】</span></div>
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">異なる色が一つに宿る神秘を持つバイカラートルマリンとアメトリンは、自然の奇跡をそのまま映した2つの宝石が９点新登場</span><span class="newsItem__text newsItem__text--sp">バイカラー系ルース9点</span></div>
 </a>
 
-<a href="https://item.rakuten.co.jp/bene/c/0000002037/?s=4&i=1" class="newsItem" role="listitem" target="_blank" rel="noopener">
+<a href="https://shop.bene-bene.com/fs/rosecut/c/l_marche" class="newsItem" role="listitem" target="_blank" rel="noopener">
 <div class="newsItem__meta"><time class="newsItem__date" datetime="2026-04-03">2026.04.03</time><span class="newsItem__category">【限定マルシェ】</span></div>
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">やわらかなピンクと、陽だまりのようなイエロー。異なる輝きをまとったダイヤモンドリング4点が新登場</span><span class="newsItem__text newsItem__text--sp">ダイヤモンドリング4点</span></div>
 </a>
@@ -834,17 +841,17 @@ window.BENE_UI = {
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">幻想的に輝くスピネルと、やさしく包むパール。静と動の美しさが調和する、大人のための春ジュエリーが２点新登場</span><span class="newsItem__text newsItem__text--sp">春ジュエリー新作2点</span></div>
 </a>
 
-<a href="https://item.rakuten.co.jp/bene/c/0000001774/?s=4" class="newsItem" role="listitem" target="_blank" rel="noopener">
+<a href="https://shop.bene-bene.com/fs/rosecut/c/specialjewelry" class="newsItem" role="listitem" target="_blank" rel="noopener">
 <div class="newsItem__meta"><time class="newsItem__date" datetime="2026-03-27">2026.03.27</time><span class="newsItem__category">【特選ﾙｰｽｼﾞｭｴﾘｰ】</span></div>
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">苺のような愛らしさを宿した、ぷるんと艶めくペツォタイト。ソーティング付きペツォタイト（ラズベリル）リング３点新登場</span><span class="newsItem__text newsItem__text--sp">ペツォタイトリング3点</span></div>
 </a>
 
-<a href="https://shop.bene-bene.com/sp_loose.html" class="newsItem" role="listitem" target="_blank" rel="noopener">
+<a href="https://shop.bene-bene.com/loose/" class="newsItem" role="listitem" target="_blank" rel="noopener">
 <div class="newsItem__meta"><time class="newsItem__date" datetime="2026-03-26">2026.03.26</time><span class="newsItem__category">【厳選ルース】</span></div>
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">自然が描いたグラデーションは全て一点物、透明感と色彩のコントラストが魅力的なバイカラートルマリンなど６点新登場</span><span class="newsItem__text newsItem__text--sp">バイカラールース6点</span></div>
 </a>
 
-<a href="https://item.rakuten.co.jp/bene/c/0000001720/" class="newsItem" role="listitem" target="_blank" rel="noopener">
+<a href="https://shop.bene-bene.com/fs/rosecut/c/resale" class="newsItem" role="listitem" target="_blank" rel="noopener">
 <div class="newsItem__meta"><time class="newsItem__date" datetime="2026-03-23">2026.03.23</time><span class="newsItem__category">【限定再販】</span></div>
 <div class="newsItem__body"><span class="newsItem__text newsItem__text--pc">整然と美しく並んだ宝石が指先で魅せる職人技！アンダリューサイト＆アイスブルーダイヤの究極ストレートリングが再販です。</span><span class="newsItem__text newsItem__text--sp">究極ストレートリング再販</span></div>
 </a>
@@ -854,10 +861,10 @@ window.BENE_UI = {
 </div>
 <div class="pillRow news-tags">
   <a href="https://shop.bene-bene.com/sp_qn.html" class="pill" target="_blank" rel="noopener">Ｑ＆Ａ</a>
-  <a href="https://item.rakuten.co.jp/bene/c/0000001861/" class="pill" target="_blank" rel="noopener">表示以外の地金で作るには</a>
+ <!-- <a href="https://item.rakuten.co.jp/bene/c/0000001861/" class="pill" target="_blank" rel="noopener">表示以外の地金で作るには</a>-->
   <a href="https://shop.bene-bene.com/sp_qn.html#q15" class="pill" target="_blank" rel="noopener">無料刻印</a>
   <a href="https://shop.bene-bene.com/qa_n.html#q1" class="pill" target="_blank" rel="noopener">無料サイズ直し</a>
-  <a href="https://item.rakuten.co.jp/bene/c/0000001638/" class="pill" target="_blank" rel="noopener">イヤリングにできる？</a>
+  <a href="https://shop.bene-bene.com/fs/rosecut/c/0000000848" class="pill" target="_blank" rel="noopener">イヤリングにできる？</a>
   <a href="https://shop.bene-bene.com/scratch/" class="pill" target="_blank" rel="noopener">割引券を貰うには</a>
   
 </div>
@@ -869,7 +876,7 @@ window.BENE_UI = {
 <p class="deliveryNote">
 <span class="contactNote">お急ぎの場合は、お気軽にお問い合わせください。</span><br>
 ※ ご注文後にお作りするため、発送日は前後する場合がございます。<br/>
-※ 一部商品は発送予定日が異なります。(あす楽等は即日発送いたします)<br>
+※ 一部商品は発送予定日が異なります。(即納等は即日発送いたします)<br>
 </p>
 </div>
 <div class="scheduleWrap" aria-label="営業カレンダー">
@@ -1068,7 +1075,7 @@ window.BENE_UI = {
 <span class="bannerSectionHead__label">Order guide</span>
 <span class="bannerSectionHead__title">理想をかたちに</span>
 </div>
-<a class="topBannerBlock__link" href="https://shop.bene-bene.com/event/benebene_guide.html" target="_blank" rel="noopener">
+<a class="topBannerBlock__link" href="https://bene-bene.net/guidebook/?utm_source=officialshop&utm_medium=referral&utm_campaign=guidebook&utm_content=banner" target="_blank">
 <img alt="世界でひとつだけのジュエリーを創る オーダージュエリーガイドブック" loading="lazy" src="assets/full_guidebook.jpg"/>
 </a>
 </div>
@@ -1079,20 +1086,21 @@ window.BENE_UI = {
 <div class="wrap">
 <div class="headRow">
 <div class="categoryHead"><span class="sectionLabel sectionLabel--soft">Category</span><h2 class="h2 sectionTitle">アイテムで選ぶ</h2></div>
-<a class="more sectionMore" href="https://item.rakuten.co.jp/bene/c/0000000820/" target="_blank" rel="noopener">カテゴリ一覧 <span aria-hidden="true">→</span></a>
+<a class="more sectionMore" href="https://shop.bene-bene.com/fs/rosecut/c/jewelry_item" target="_blank" rel="noopener">カテゴリ一覧 <span aria-hidden="true">→</span></a>
 </div>
 
 <div class="iconGrid">
-<a class="iconCard" href="https://item.rakuten.co.jp/bene/c/0000000844/" target="_blank" rel="noopener"><span class="ic"><img alt="" aria-hidden="true" class="catIconImg" src="assets/icons/ring.png"/></span><span>リング</span></a>
+<a class="iconCard" href="https://shop.bene-bene.com/fs/rosecut/c/0000000844" target="_blank" rel="noopener"><span class="ic"><img alt="" aria-hidden="true" class="catIconImg" src="assets/icons/ring.png"/></span><span>リング</span></a>
 
-<a class="iconCard" href="https://item.rakuten.co.jp/bene/c/0000000845/" target="_blank" rel="noopener"><span class="ic"><img alt="" aria-hidden="true" class="catIconImg" src="assets/icons/pinky.png"/></span><span>ピンキーリング</span></a>
-<a class="iconCard" href="https://item.rakuten.co.jp/bene/c/0000000846/" target="_blank" rel="noopener"><span class="ic"><img alt="" aria-hidden="true" class="catIconImg" src="assets/icons/pendant.png"/></span><span>ペンダント</span></a>
+<a class="iconCard" href="https://shop.bene-bene.com/fs/rosecut/c/0000000845" target="_blank" rel="noopener"><span class="ic"><img alt="" aria-hidden="true" class="catIconImg" src="assets/icons/pinky.png"/></span><span>ピンキーリング</span></a>
+<a class="iconCard" href="https://shop.bene-bene.com/fs/rosecut/c/0000000846" target="_blank" rel="noopener"><span class="ic"><img alt="" aria-hidden="true" class="catIconImg" src="assets/icons/pendant.png"/></span><span>ペンダント</span></a>
 
-<a class="iconCard" href="https://item.rakuten.co.jp/bene/c/0000001046/" target="_blank" rel="noopener"><span class="ic"><img alt="" aria-hidden="true" class="catIconImg" src="assets/icons/pierce.png"/></span><span>ピアス・イヤリング</span></a>
-<a class="iconCard" href="https://item.rakuten.co.jp/bene/c/0000000847/" target="_blank" rel="noopener"><span class="ic"><img alt="" aria-hidden="true" class="catIconImg" src="assets/icons/bracelet.png"/></span><span>ブレスレット</span></a>
-<a class="iconCard" href="https://shop.bene-bene.com/sp_loose.html" target="_blank" rel="noopener"><span class="ic"><img alt="" aria-hidden="true" class="catIconImg" src="assets/icons/loose.png"/></span><span>ルース・裸石</span></a>
-<a class="iconCard" href="https://item.rakuten.co.jp/bene/c/0000000848/" target="_blank" rel="noopener"><span class="ic"><img alt="" aria-hidden="true" class="catIconImg" src="assets/icons/chain.png"/></span><span>チェーン・金具</span></a>
-<a class="iconCard" href="https://item.rakuten.co.jp/bene/c/0000000849/" target="_blank" rel="noopener"><span class="ic"><img alt="" aria-hidden="true" class="catIconImg" src="assets/icons/care.png"/></span><span>お手入れ</span></a>
+<a class="iconCard" href="https://shop.bene-bene.com/fs/rosecut/c/0000001046" target="_blank" rel="noopener"><span class="ic"><img alt="" aria-hidden="true" class="catIconImg" src="assets/icons/pierce.png"/></span><span>ピアス・イヤリング</span></a>
+<a class="iconCard" href="https://shop.bene-bene.com/fs/rosecut/c/0000000847" target="_blank" rel="noopener"><span class="ic"><img alt="" aria-hidden="true" class="catIconImg" src="assets/icons/bracelet.png"/></span><span>ブレスレット</span></a>
+<a class="iconCard" href="https://shop.bene-bene.com/loose/" target="_blank" rel="noopener"><span class="ic"><img alt="" aria-hidden="true" class="catIconImg" src="assets/icons/loose.png"/></span><span>ルース・裸石</span></a>
+
+<a class="iconCard" href="https://shop.bene-bene.com/fs/rosecut/c/0000000848" target="_blank" rel="noopener"><span class="ic"><img alt="" aria-hidden="true" class="catIconImg" src="assets/icons/chain.png"/></span><span>チェーン・金具</span></a>
+<a class="iconCard" href="https://shop.bene-bene.com/fs/rosecut/c/0000000849" target="_blank" rel="noopener"><span class="ic"><img alt="" aria-hidden="true" class="catIconImg" src="assets/icons/care.png"/></span><span>お手入れ</span></a>
 
 </div>
 </div>
@@ -1102,12 +1110,12 @@ window.BENE_UI = {
 <div class="wrap">
 <div class="headRow">
 <div class="categoryHead"><span class="sectionLabel sectionLabel--soft">Material</span><h2 class="h2 subsectionTitle">素材・宝石で選ぶ</h2></div>
-<a class="more sectionMore" href="https://item.rakuten.co.jp/bene/c/0000000822/" target="_blank" rel="noopener">カテゴリ一覧 <span aria-hidden="true">→</span></a>
+<a class="more sectionMore" href="https://shop.bene-bene.com/fs/rosecut/c/jewelry_item" target="_blank" rel="noopener">カテゴリ一覧 <span aria-hidden="true">→</span></a>
 </div>
 <div class="categoryQuickGrid categoryQuickGrid--four">
-<a class="priceCard" href="https://item.rakuten.co.jp/bene/c/0000000822/" target="_blank" rel="noopener">宝石で選ぶ</a>
-<a class="priceCard" href="https://item.rakuten.co.jp/bene/c/0000001134/" target="_blank" rel="noopener">メタル</a>
-<a class="priceCard" href="https://shop.bene-bene.com/sp_loose.html" target="_blank" rel="noopener">ルース</a>
+<a class="priceCard" href="https://shop.bene-bene.com/fs/rosecut/c/jewelry_item" target="_blank" rel="noopener">宝石で選ぶ</a>
+<a class="priceCard" href="https://shop.bene-bene.com/fs/rosecut/c/0000001134" target="_blank" rel="noopener">メタル</a>
+<a class="priceCard" href="https://shop.bene-bene.com/loose/" target="_blank" rel="noopener">ルース</a>
 <a class="priceCard" href="https://shop.bene-bene.com/sp_custom.html" target="_blank" rel="noopener">カスタム</a>
 </div>
 </div>
@@ -1119,18 +1127,18 @@ window.BENE_UI = {
 <div class="categoryHead"><span class="sectionLabel sectionLabel--soft">Birthstone</span><h2 class="h2 subsectionTitle">誕生石</h2></div>
 </div>
 <div class="birthGrid">
-<a class="birth" href="https://item.rakuten.co.jp/bene/c/0000000243/" target="_blank" rel="noopener"><span>1月</span><strong>ガーネット</strong></a>
-<a class="birth" href="https://item.rakuten.co.jp/bene/c/0000000244/" target="_blank" rel="noopener"><span>2月</span><strong>アメシスト･クリソベリルキャッツアイ</strong></a>
-<a class="birth" href="https://item.rakuten.co.jp/bene/c/0000000245/" target="_blank" rel="noopener"><span>3月</span><strong>アクアマリン･アイオライト･珊瑚</strong></a>
-<a class="birth" href="https://item.rakuten.co.jp/bene/c/0000000246/" target="_blank" rel="noopener"><span>4月</span><strong>ダイヤモンド･モルガナイト</strong></a>
-<a class="birth" href="https://item.rakuten.co.jp/bene/c/0000000247/" target="_blank" rel="noopener"><span>5月</span><strong>エメラルド･翡翠</strong></a>
-<a class="birth" href="https://item.rakuten.co.jp/bene/c/0000000248/" target="_blank" rel="noopener"><span>6月</span><strong>アレキサンドライト･ムーンストーン･真珠</strong></a>
-<a class="birth" href="https://item.rakuten.co.jp/bene/c/0000000249/" target="_blank" rel="noopener"><span>7月</span><strong>ルビー･スフェーン</strong></a>
-<a class="birth" href="https://item.rakuten.co.jp/bene/c/0000000250/" target="_blank" rel="noopener"><span>8月</span><strong>ペリドット･スピネル･オニキス</strong></a>
-<a class="birth" href="https://item.rakuten.co.jp/bene/c/0000000251/" target="_blank" rel="noopener"><span>9月</span><strong>サファイア･クンツァイト</strong></a>
-<a class="birth" href="https://item.rakuten.co.jp/bene/c/0000000252/" target="_blank" rel="noopener"><span>10月</span><strong>トルマリン･オパール</strong></a>
-<a class="birth" href="https://item.rakuten.co.jp/bene/c/0000000253/" target="_blank" rel="noopener"><span>11月</span><strong>トパーズ･シトリン</strong></a>
-<a class="birth" href="https://item.rakuten.co.jp/bene/c/0000000254/" target="_blank" rel="noopener"><span>12月</span><strong>ジルコン･ラピスラズリ･ターコイズ･タンザナイト</strong></a>
+<a class="birth" href="https://shop.bene-bene.com/fs/rosecut/c/0000000243" target="_blank" rel="noopener"><span>1月</span><strong>ガーネット</strong></a>
+<a class="birth" href="https://shop.bene-bene.com/fs/rosecut/c/cr44" target="_blank" rel="noopener"><span>2月</span><strong>アメシスト･クリソベリルキャッツアイ</strong></a>
+<a class="birth" href="https://shop.bene-bene.com/fs/rosecut/c/cr45" target="_blank" rel="noopener"><span>3月</span><strong>アクアマリン･アイオライト･珊瑚</strong></a>
+<a class="birth" href="https://shop.bene-bene.com/fs/rosecut/c/0000000246" target="_blank" rel="noopener"><span>4月</span><strong>ダイヤモンド･モルガナイト</strong></a>
+<a class="birth" href="https://shop.bene-bene.com/fs/rosecut/c/cr77" target="_blank" rel="noopener"><span>5月</span><strong>エメラルド･翡翠</strong></a>
+<a class="birth" href="https://shop.bene-bene.com/fs/rosecut/c/cr27" target="_blank" rel="noopener"><span>6月</span><strong>アレキサンドライト･ムーンストーン･真珠</strong></a>
+<a class="birth" href="https://shop.bene-bene.com/fs/rosecut/c/cr80" target="_blank" rel="noopener"><span>7月</span><strong>ルビー･スフェーン</strong></a>
+<a class="birth" href="https://shop.bene-bene.com/fs/rosecut/c/cr55" target="_blank" rel="noopener"><span>8月</span><strong>ペリドット･スピネル･オニキス</strong></a>
+<a class="birth" href="https://shop.bene-bene.com/fs/rosecut/c/cr20" target="_blank" rel="noopener"><span>9月</span><strong>サファイア･クンツァイト</strong></a>
+<a class="birth" href="https://shop.bene-bene.com/fs/rosecut/c/cr5" target="_blank" rel="noopener"><span>10月</span><strong>トルマリン･オパール</strong></a>
+<a class="birth" href="https://shop.bene-bene.com/fs/rosecut/c/cr52" target="_blank" rel="noopener"><span>11月</span><strong>トパーズ･シトリン</strong></a>
+<a class="birth" href="https://shop.bene-bene.com/fs/rosecut/c/cr50" target="_blank" rel="noopener"><span>12月</span><strong>ジルコン･ラピスラズリ･ターコイズ･タンザナイト</strong></a>
 </div>
 </div>
 </section>
@@ -1162,19 +1170,19 @@ window.BENE_UI = {
 </div>
 <div class="cardGrid closeupGrid">
 <a class="itemCard closeupCard" href="https://shop.bene-bene.com/metal" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="メタルジュエリーのバナー" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/nt_metal.jpg"/></span><p class="featureCaption">メタルジュエリー</p></a>
-<a class="itemCard closeupCard" href="https://item.rakuten.co.jp/bene/c/0000001874/" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="アルディートのバナー" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/nt_190507_ardito.jpg"/></span><p class="featureCaption">アルディート</p></a>
-<a class="itemCard closeupCard" href="https://item.rakuten.co.jp/bene/c/0000000407/" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="カラーレディスのバナー" loading="lazy" src="https://shop.bene-bene.com/bene_img/nt_colorladys.jpg"/></span><p class="featureCaption">カラーレディス</p></a>
-<a class="itemCard closeupCard" href="https://item.rakuten.co.jp/bene/c/0000001866/" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="配置シミュレーションのバナー" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/lt_scustomjw.gif"/></span><p class="featureCaption">配置をシミュレーション</p></a>
-<a class="itemCard closeupCard" href="https://item.rakuten.co.jp/bene/c/0000000796/" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="シェルタ" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/nt_scelta.jpg"/></span><p class="featureCaption">シェルタ</p></a>
-<a class="itemCard closeupCard" href="https://item.rakuten.co.jp/bene/c/0000000808/" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="ブトン" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/nt_bouton.jpg"/></span><p class="featureCaption">ブトン</p></a>
-<a class="itemCard closeupCard" href="https://item.rakuten.co.jp/bene/c/0000000779/" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="イニシャル" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/nt_initial.jpg"/></span><p class="featureCaption">イニシャル</p></a>
+<a class="itemCard closeupCard" href="https://shop.bene-bene.com/fs/rosecut/c/Ardito" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="アルディートのバナー" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/nt_190507_ardito.jpg"/></span><p class="featureCaption">アルディート</p></a>
+<a class="itemCard closeupCard" href="https://shop.bene-bene.com/fs/rosecut/c/0000000407" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="カラーレディスのバナー" loading="lazy" src="https://shop.bene-bene.com/bene_img/nt_colorladys.jpg"/></span><p class="featureCaption">カラーレディス</p></a>
+<a class="itemCard closeupCard" href="https://shop.bene-bene.com/fs/rosecut/c/gr808" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="配置シミュレーションのバナー" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/lt_scustomjw.gif"/></span><p class="featureCaption">配置をシミュレーション</p></a>
+<a class="itemCard closeupCard" href="https://shop.bene-bene.com/fs/rosecut/c/gr674" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="シェルタ" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/nt_scelta.jpg"/></span><p class="featureCaption">シェルタ</p></a>
+<a class="itemCard closeupCard" href="ブトン ローズカットダイヤ・カラーストーンのオーダージュエリー ベーネベーネ https://shop.bene-bene.com/fs/rosecut/c/0000000808" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="ブトン" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/nt_bouton.jpg"/></span><p class="featureCaption">ブトン</p></a>
+<a class="itemCard closeupCard" href="https://shop.bene-bene.com/fs/rosecut/GoodsSearchList.html?_e_k=%82%60&keyword=%83C%83j%83V%83%83%83%8B" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="イニシャル" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/topcontent/nt_initial.jpg"/></span><p class="featureCaption">イニシャル</p></a>
 <a class="itemCard closeupCard" href="https://shop.bene-bene.com/event/ballet/ballet.html" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="バレエ" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/nt_ballet.jpg"/></span><p class="featureCaption">バレエ</p></a>
-<a class="itemCard closeupCard" href="https://store.shopping.yahoo.co.jp/benebene/b0a6c7ada5.html" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="愛猫リング" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/nt_micino.jpg"/></span><p class="featureCaption">愛猫リング-micino-</p></a>
-<a class="itemCard closeupCard" href="https://shop.bene-bene.com/fs/rosecut/GoodsSearchList.html?_e_k=Ａ&amp;keyword=オッチ" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="オッチ" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/nt_occhi.jpg"/></span><p class="featureCaption">オッチ</p></a>
-<a class="itemCard closeupCard" href="https://item.rakuten.co.jp/bene/c/0000001112/" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="モチーフ" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/nt_motif.jpg"/></span><p class="featureCaption">モチーフ</p></a>
-<a class="itemCard closeupCard" href="https://item.rakuten.co.jp/bene/c/0000001865/" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="奏でるカラー" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/nt_kanacolor.jpg"/></span><p class="featureCaption">奏でるカラー</p></a>
-<a class="itemCard closeupCard" href="https://item.rakuten.co.jp/bene/c/0000001604/" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="究極ストレート" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/nt_kyukyokust.jpg"/></span><p class="featureCaption">究極ストレート</p></a>
-<a class="itemCard closeupCard" href="https://item.rakuten.co.jp/bene/c/0000001771/" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="あす楽" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/nt_naruhaya.jpg"/></span><p class="featureCaption">あす楽</p></a>
+<a class="itemCard closeupCard" href="https://shop.bene-bene.com/fs/rosecut/c/micino" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="愛猫リング" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/nt_micino.jpg"/></span><p class="featureCaption">愛猫リング-micino-</p></a>
+<a class="itemCard closeupCard" href="https://shop.bene-bene.com/fs/rosecut/GoodsSearchList.html?_e_k=%82%60&keyword=%83I%83b%83%60" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="オッチ" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/nt_occhi.jpg"/></span><p class="featureCaption">オッチ</p></a>
+<a class="itemCard closeupCard" href="https://shop.bene-bene.com/fs/rosecut/c/0000001112" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="モチーフ" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/nt_motif.jpg"/></span><p class="featureCaption">モチーフ</p></a>
+<a class="itemCard closeupCard" href="https://shop.bene-bene.com/fs/rosecut/c/kanacolor" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="奏でるカラー" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/nt_kanacolor.jpg"/></span><p class="featureCaption">奏でるカラー</p></a>
+<a class="itemCard closeupCard" href="https://shop.bene-bene.com/fs/rosecut/c/0000000623" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="究極ストレート" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/nt_kyukyokust.jpg"/></span><p class="featureCaption">究極ストレート</p></a>
+<a class="itemCard closeupCard" href="https://shop.bene-bene.com/fs/rosecut/c/sokunou#plist" target="_blank" rel="noopener"><span class="img closeupImageWrap"><img alt="即納" loading="lazy" src="https://image.rakuten.co.jp/bene/cabinet/tao/gold/banner/nt_naruhaya.jpg"/></span><p class="featureCaption">即納</p></a>
 </div>
 </div>
 </section>
@@ -1207,7 +1215,7 @@ window.BENE_UI = {
 <div class="categoryHead"><span class="sectionLabel sectionLabel--soft">Support</span><h2 class="h2 sectionTitle">安心サービス</h2></div>
 </div>
 <div class="trust-grid" role="list" aria-label="安心サービス一覧">
-<a class="trust-item" href="https://www.rakuten.co.jp/bene/info2.html" role="listitem" target="_blank" rel="noopener">
+<a class="trust-item" href="https://shop.bene-bene.com/fs/rosecut/PostageSettleList.html" role="listitem" target="_blank" rel="noopener">
 <img src="assets/icons/200-souryo0.png" alt="3,980円以上送料無料" loading="lazy"/>
 <span class="serviceLabel">Delivery</span>
 <p>3,980円以上送料無料</p>
@@ -1217,7 +1225,7 @@ window.BENE_UI = {
 <span class="serviceLabel">Support</span>
 <p>サイズ直し対応</p>
 </a>
-<a class="trust-item" href="https://item.rakuten.co.jp/bene/c/0000001520/" role="listitem" target="_blank" rel="noopener">
+<a class="trust-item" href="https://shop.bene-bene.com/fs/rosecut/c/gr568" role="listitem" target="_blank" rel="noopener">
 <img src="assets/icons/200-gift.png" alt="ギフトラッピング" loading="lazy"/>
 <span class="serviceLabel">Gift</span>
 <p>ギフトラッピング</p>
@@ -1227,7 +1235,7 @@ window.BENE_UI = {
 <span class="serviceLabel">After service</span>
 <p>修理・アフターサービス</p>
 </a>
-<a class="trust-item" href="https://www.rakuten.co.jp/bene/info2.html" role="listitem" target="_blank" rel="noopener">
+<a class="trust-item" href="https://shop.bene-bene.com/fs/rosecut/ReturnedSpecialContract.html" role="listitem" target="_blank" rel="noopener">
 <img src="assets/icons/200-koukan.png" alt="返品・交換" loading="lazy"/>
 <span class="serviceLabel">Policy</span>
 <p>返品・交換</p>
@@ -1243,8 +1251,8 @@ window.BENE_UI = {
 <div class="categoryHead"><span class="sectionLabel sectionLabel--soft">Guide</span><h2 class="h2 subsectionTitle">ご利用ガイド</h2></div>
 </div>
 <div class="guideRow">
-<a class="guide" href="https://www.rakuten.co.jp/bene/info2.html" target="_blank" rel="noopener"><span class="guide__label">Delivery</span><span class="guide__title">お届け・送料</span></a>
-<a class="guide" href="https://www.rakuten.co.jp/bene/info2.html" target="_blank" rel="noopener"><span class="guide__label">Payment</span><span class="guide__title">お支払い</span></a>
+<a class="guide" href="https://shop.bene-bene.com/fs/rosecut/PostageSettleList.html" target="_blank" rel="noopener"><span class="guide__label">Delivery</span><span class="guide__title">お届け・送料</span></a>
+<a class="guide" href="https://shop.bene-bene.com/fs/rosecut/PostageSettleList.html" target="_blank" rel="noopener"><span class="guide__label">Payment</span><span class="guide__title">お支払い</span></a>
 <a class="guide" href="https://shop.bene-bene.com/qa_n.html" target="_blank" rel="noopener"><span class="guide__label">FAQ</span><span class="guide__title">Q&amp;A</span></a>
 </div>
 </div>
@@ -1258,7 +1266,7 @@ window.BENE_UI = {
 <h2 class="sectionTitle">店舗案内</h2>
 </div>
 <div class="twoCols salonGrid">
-<a class="shopLink" href="https://shop.bene-bene.com/shop/shop.html#ginzasalon" target="_blank" rel="noopener"><div class="box">
+<a class="shopLink" href="https://bene-bene.net/shop/ginza/" target="_blank" rel="noopener"><div class="box">
 <h3><span aria-hidden="true" class="shopIcon">
 <svg fill="none" height="18" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10.5V20a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-9.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
@@ -1270,7 +1278,7 @@ window.BENE_UI = {
 <p>東京都中央区銀座3-12-11 第2タチバナ銀座ビル6階<br/>03-5565-0750</p>
 </div></a>
 
-<a class="shopLink" href="https://shop.bene-bene.com/shop/shop.html#kofushop" target="_blank" rel="noopener">
+<a class="shopLink" href="https://bene-bene.net/shop/kofu/" target="_blank" rel="noopener">
 <div class="box">
 <h3><span aria-hidden="true" class="shopIcon">
 <svg fill="none" height="18" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
@@ -1325,17 +1333,17 @@ window.BENE_UI = {
       <section class="footer-block" aria-labelledby="footer-support-title">
         <h2 class="footer-title" id="footer-support-title">SUPPORT</h2>
         <ul class="footer-links">
-          <li><a href="https://www.rakuten.co.jp/bene/info2.html#shipping" target="_blank" rel="noopener">送料について</a></li>
-          <li><a href="https://www.rakuten.co.jp/bene/info2.html#shipping" target="_blank" rel="noopener">お届けについて</a></li>
-          <li><a href="https://www.rakuten.co.jp/bene/info2.html" target="_blank" rel="noopener">お支払いについて</a></li>
-          <li><a href="https://www.rakuten.co.jp/bene/info2.html#return_policy" target="_blank" rel="noopener">返品・交換について</a></li>
+          <li><a href="https://shop.bene-bene.com/fs/rosecut/PostageSettleList.html" target="_blank" rel="noopener">送料について</a></li>
+          <li><a href="https://shop.bene-bene.com/fs/rosecut/PostageSettleList.html" target="_blank" rel="noopener">お届けについて</a></li>
+          <li><a href="https://shop.bene-bene.com/fs/rosecut/PostageSettleList.html" target="_blank" rel="noopener">お支払いについて</a></li>
+          <li><a href="https://shop.bene-bene.com/fs/rosecut/ReturnedSpecialContract.html" target="_blank" rel="noopener">返品・交換について</a></li>
         </ul>
       </section>
       <section class="footer-block" aria-labelledby="footer-customer-title">
         <h2 class="footer-title" id="footer-customer-title">CUSTOMER</h2>
         <ul class="footer-links">
-          <li><a href="https://inquiry.my.rakuten.co.jp/shop/209075" target="_blank" rel="noopener">お問い合わせ</a></li>
-          <li><a href="https://page.line.me/208srkfv" target="_blank" rel="noopener">LINEでお問い合わせ</a></li>
+          <li><a href="https://shop.bene-bene.com/benebene/contact/" target="_blank" rel="noopener">お問い合わせ</a></li>
+          <li><a href="https://page.line.me/559emxpx" target="_blank" rel="noopener">LINEでお問い合わせ</a></li>
           <li><a href="https://shop.bene-bene.com/qa_n.html" target="_blank" rel="noopener">よくある質問</a></li>
           <li><a href="https://item.rakuten.co.jp/bene/c/0000001520/" target="_blank" rel="noopener">ラッピングについて</a></li>
         </ul>
@@ -1343,9 +1351,9 @@ window.BENE_UI = {
       <section class="footer-block" aria-labelledby="footer-info-title">
         <h2 class="footer-title" id="footer-info-title">INFO</h2>
         <ul class="footer-links">
-          <li><a href="https://www.rakuten.co.jp/bene/info.html?l-id=shoptop_shopmenu_company" target="_blank" rel="noopener">会社概要</a></li>
-          <li><a href="https://www.rakuten.co.jp/bene/info.html?l-id=shoptop_shopmenu_company" target="_blank" rel="noopener">特定商取引法</a></li>
-          <li><a href="https://www.rakuten.co.jp/bene/info.html?l-id=shoptop_shopmenu_company" target="_blank" rel="noopener">プライバシーポリシー</a></li>
+          <li><a href="https://shop.bene-bene.com/fs/rosecut/c/gr9" target="_blank" rel="noopener">会社概要</a></li>
+          <li><a href="https://shop.bene-bene.com/fs/rosecut/BusinessDeal.html" target="_blank" rel="noopener">特定商取引法</a></li>
+          <li><a href="https://shop.bene-bene.com/fs/rosecut/PrivacyPolicy.html" target="_blank" rel="noopener">プライバシーポリシー</a></li>
   <li><a href="https://shop.bene-bene.com/caution" target="_blank" rel="noopener">偽サイト・模倣サイトにご注意ください</a></li>
           
         </ul>
@@ -1751,10 +1759,10 @@ if(!slides.length) return;
 
 </script>
 <div aria-label="お問い合わせショートカット" class="floatLeft">
-<a aria-label="お問い合わせ" class="floatBtn iconImg" href="https://inquiry.my.rakuten.co.jp/shop/209075" title="お問い合わせ" target="_blank" rel="noopener">
+<a aria-label="お問い合わせ" class="floatBtn iconImg" href="https://shop.bene-bene.com/benebene/contact/" title="お問い合わせ" target="_blank" rel="noopener">
 <img alt="お問い合わせ" src="assets/ico_contact.png"/>
 </a>
-<a aria-label="LINEでお問合せ" class="floatBtn iconImg" href="https://page.line.me/208srkfv" title="LINEでお問合せ" target="_blank" rel="noopener">
+<a aria-label="LINEでお問合せ" class="floatBtn iconImg" href="https://page.line.me/559emxpx" title="LINEでお問合せ" target="_blank" rel="noopener">
 <img alt="LINEでお問合せ" src="assets/ico_line.png"/>
 </a>
 </div>
@@ -1810,7 +1818,7 @@ window.BENE_TOP_NOTICE_CONFIG = {
   campaignBanner: {
     enabled: true,
     startAt: '2026-05-09T20:00:00+09:00',
-    endAt: '2026-05-16T01:59:59+09:00'
+    endAt: '2026-05-09T01:59:59+09:00'
   }
 };
 </script>
@@ -1821,7 +1829,7 @@ window.BENE_TOP_NOTICE_CONFIG = {
   <a aria-label="電話をかける" class="drawerPhoneNum" href="tel:0120457678">0120-457-678</a>
   <div class="drawerActions">
     <button aria-label="検索" class="drawerIco" id="drawerSearchBtn" type="button">検索</button>
-    <a aria-label="MAILMAGAZINE" class="drawerIco" href="https://www.rakuten.co.jp/bene/news.html" target="_blank" rel="noopener">MAILMAGAZINE</a>
+    <a aria-label="MAILMAGAZINE" class="drawerIco" href="https://shop.bene-bene.com/fs/rosecut/fs/rosecut/MailMagazineEntry.html" target="_blank" rel="noopener">MAILMAGAZINE</a>
   </div>
 </div>
 <button aria-label="閉じる" class="gnavClose" type="button">×</button>
@@ -1830,18 +1838,18 @@ window.BENE_TOP_NOTICE_CONFIG = {
   <ul class="gnavList">
     <li class="gnavItem menu-item has-children">
       <div class="menu-row">
-        <a class="menu-link" href="https://item.rakuten.co.jp/bene/c/0000000820/" target="_blank" rel="noopener">アイテムで選ぶ</a>
+        <a class="menu-link" href="https://shop.bene-bene.com/fs/rosecut/c/jewelry_item" target="_blank" rel="noopener">アイテムで選ぶ</a>
         <button aria-controls="submenu-item" aria-expanded="false" aria-label="アイテムで選ぶを開閉" class="submenu-toggle submenu-icon" type="button"></button>
       </div>
       <ul class="gnavSub submenu" id="submenu-item">
-        <li><a class="gnavSublink" href="https://item.rakuten.co.jp/bene/c/0000000844/" target="_blank" rel="noopener">リング</a></li>
-        <li><a class="gnavSublink" href="https://item.rakuten.co.jp/bene/c/0000000845/" target="_blank" rel="noopener">ピンキーリング</a></li>
-        <li><a class="gnavSublink" href="https://item.rakuten.co.jp/bene/c/0000000846/" target="_blank" rel="noopener">ペンダント</a></li>
-        <li><a class="gnavSublink" href="https://item.rakuten.co.jp/bene/c/0000001046/" target="_blank" rel="noopener">ピアス・イヤリング</a></li>
-        <li><a class="gnavSublink" href="https://item.rakuten.co.jp/bene/c/0000000847/" target="_blank" rel="noopener">ブレスレット</a></li>
-        <li><a class="gnavSublink" href="https://shop.bene-bene.com/sp_loose.html" target="_blank" rel="noopener">ルース・裸石</a></li>
-        <li><a class="gnavSublink" href="https://item.rakuten.co.jp/bene/c/0000000848/" target="_blank" rel="noopener">チェーン・金具</a></li>
-        <li><a class="gnavSublink" href="https://item.rakuten.co.jp/bene/c/0000000849/" target="_blank" rel="noopener">お手入れ</a></li>
+        <li><a class="gnavSublink" href="https://shop.bene-bene.com/fs/rosecut/c/0000000844" target="_blank" rel="noopener">リング</a></li>
+        <li><a class="gnavSublink" href="https://shop.bene-bene.com/fs/rosecut/c/0000000845" target="_blank" rel="noopener">ピンキーリング</a></li>
+        <li><a class="gnavSublink" href="https://shop.bene-bene.com/fs/rosecut/c/0000000846" target="_blank" rel="noopener">ペンダント</a></li>
+        <li><a class="gnavSublink" href="https://shop.bene-bene.com/fs/rosecut/c/0000001046" target="_blank" rel="noopener">ピアス・イヤリング</a></li>
+        <li><a class="gnavSublink" href="https://shop.bene-bene.com/fs/rosecut/c/0000000847" target="_blank" rel="noopener">ブレスレット</a></li>
+        <li><a class="gnavSublink" href="https://shop.bene-bene.com/loose/" target="_blank" rel="noopener">ルース・裸石</a></li>
+        <li><a class="gnavSublink" href="https://shop.bene-bene.com/fs/rosecut/c/0000000848" target="_blank" rel="noopener">チェーン・金具</a></li>
+        <li><a class="gnavSublink" href="https://shop.bene-bene.com/fs/rosecut/c/0000000849" target="_blank" rel="noopener">お手入れ</a></li>
       </ul>
     </li>
     <li class="gnavItem"><a class="gnavLink" href="#new">新作先行</a></li>
@@ -1851,30 +1859,73 @@ window.BENE_TOP_NOTICE_CONFIG = {
         <button aria-controls="submenu-one" aria-expanded="false" aria-label="一点ものを開閉" class="submenu-toggle submenu-icon" type="button"></button>
       </div>
       <ul class="gnavSub submenu" id="submenu-one">
-        <li><a class="gnavSublink" href="https://item.rakuten.co.jp/bene/c/0000001774/?s=4" target="_blank" rel="noopener">特選ルースジュエリー</a></li>
-        <li><a class="gnavSublink" href="https://item.rakuten.co.jp/bene/c/0000002037/?s=4&i=1" target="_blank" rel="noopener">限定マルシェ</a></li>
+        <li><a class="gnavSublink" href="https://shop.bene-bene.com/fs/rosecut/c/specialjewelry" target="_blank" rel="noopener">特選ルースジュエリー</a></li>
+        <li><a class="gnavSublink" href="https://shop.bene-bene.com/fs/rosecut/c/l_marche" target="_blank" rel="noopener">限定マルシェ</a></li>
       </ul>
     </li>
     <li class="gnavItem"><a class="gnavLink" href="#resale">限定再販</a></li>
     <li class="gnavItem menu-item has-children">
       <div class="menu-row">
-        <a class="menu-link" href="https://item.rakuten.co.jp/bene/c/0000001720/" target="_blank" rel="noopener">宝石で選ぶ</a>
+        <a class="menu-link" href="https://shop.bene-bene.com/fs/rosecut/c/resale" target="_blank" rel="noopener">宝石で選ぶ</a>
         <button aria-controls="submenu-stone" aria-expanded="false" aria-label="宝石で選ぶを開閉" class="submenu-toggle submenu-icon" type="button"></button>
       </div>
       <ul class="gnavSub submenu" id="submenu-stone">
         <li><a class="gnavSublink" href="https://item.rakuten.co.jp/bene/c/0000001132/" target="_blank" rel="noopener">ダイヤモンド</a></li>
         <li><a class="gnavSublink" href="https://item.rakuten.co.jp/bene/c/0000001133/" target="_blank" rel="noopener">カラーストーン</a></li>
-        <li><a class="gnavSublink" href="https://item.rakuten.co.jp/bene/c/0000001424/" target="_blank" rel="noopener">稀少石</a></li>
+        <li><a class="gnavSublink" href="https://shop.bene-bene.com/fs/rosecut/c/gr619" target="_blank" rel="noopener">稀少石</a></li>
       </ul>
     </li>
     <li class="gnavItem"><a class="gnavLink" href="https://shop.bene-bene.com/metal/" target="_blank" rel="noopener">メタル</a></li>
-    <li class="gnavItem"><a class="gnavLink" href="https://shop.bene-bene.com/sp_loose.html" target="_blank" rel="noopener">ルース</a></li>
+    <li class="gnavItem"><a class="gnavLink" href="https://shop.bene-bene.com/loose/" target="_blank" rel="noopener">ルース</a></li>
     <li class="gnavItem"><a class="gnavLink" href="https://shop.bene-bene.com/sp_custom.html" target="_blank" rel="noopener">カスタム</a></li>
   </ul>
 </div>
 </nav>
 
 <button id="toTopBtn" type="button" aria-label="上に戻る" title="上に戻る"><span>↑</span></button>
+
+
+    <!-- Yahoo Code for your Target List -->
+    <script type="text/javascript" language="javascript">
+        /* <![CDATA[ */
+        var yahoo_retargeting_id = '7JA8DCT3O8';
+        var yahoo_retargeting_label = '';
+        var yahoo_retargeting_page_type = '';
+        var yahoo_retargeting_items = [{
+item_id: '',
+category_id: '',
+price: '',
+quantity: ''
+        }];
+        /* ]]> */
+
+    </script>
+    <script type="text/javascript" language="javascript" src="https://b92.yahoo.co.jp/js/s_retargeting.js"></script>
+
+
+
+    <script id="tagjs" type="text/javascript">
+        (function() {
+var tagjs = document.createElement("script");
+var s = document.getElementsByTagName("script")[0];
+tagjs.async = true;
+tagjs.src = "//s.yjtag.jp/tag.js#site=w9aDt9V";
+s.parentNode.insertBefore(tagjs, s);
+        }());
+
+    </script>
+    <noscript>
+        <iframe src="//b.yjtag.jp/iframe?c=w9aDt9V" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </noscript>
+
+
+<script>
+var mattrz_loadScript = function (src, callback) {var done = false;var head = document.getElementsByTagName('head')[0];var script = document.createElement('script');script.src = src;head.appendChild(script);script.onload = script.onreadystatechange = function () {mattrz_jquery = jQuery.noConflict(true);if (!done && (!this.readyState || this.readyState === "loaded" || this.readyState === "complete")) {done = true;callback();script.onload = script.onreadystatechange = null;if (head && script.parentNode) {head.removeChild(script);}}};};function run_mattrz_loadScript() {mattrz_loadScript("https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js", function () {var fs_uu = localStorage.getItem("_fs_uuid");if (fs_uu) {} else {var fs_uu = "";}mattrz_jquery.ajax({type: "post",dataType: "json",url: "https://fspark-ap.com/ft/sv",data: {id: 30559,tag: "5v8lgrC306kZ30559FS.js",url: location.href,uu: fs_uu},success: function (data) {if (data.ret == 0) {mattrz_jquery.globalEval(data.js);}}});});};let fs_tag_count = 0;const fs_wait_dom_interval = setInterval(function () {if (document.readyState == "complete") {run_mattrz_loadScript();clearInterval(fs_wait_dom_interval);}if (++fs_tag_count >= 108000) {run_mattrz_loadScript();clearInterval(fs_wait_dom_interval);}}, 100);
+</script>
+
+<script type="text/javascript">function fetchScriptAsText (url) { return fetch(url).then((response) => { if (!response.ok) { return Promise.reject(new Error(`Failed to load the entry script: ${response.statusText}`)); } return response.text(); }).catch((error) => { console.error(`Failed to load the entry script: ${error}`); }); } function appendScriptToBody (scriptContent) { const script = document.createElement('script'); script.textContent = scriptContent; document.body.appendChild(script); } function loadMattrzCxEntryScript () { fetchScriptAsText('https://uploads.mattrz-cx.com/uploads/client/tag/11683/index.js').then((mattrzEntryScript) => { mattrzEntryScript = mattrzEntryScript.replace('loadMattrzCxLibrary();', 'fetchScriptAsText("https://library.mattrz-cx.com/index.js").then((libScript)=>{appendScriptToBody(libScript);processMattrzCxLibrary();});'); appendScriptToBody(mattrzEntryScript); }); } function setupMattrzCxLibraryLoader () { let mattrzCxTagCount = 0; const mattrzCxWaitDomInterval = setInterval(() => { if (document.readyState === 'complete' || ++mattrzCxTagCount >= 50) { loadMattrzCxEntryScript(); clearInterval(mattrzCxWaitDomInterval); } }, 100); } if (!/googlebot/i.test(navigator.userAgent)) { setupMattrzCxLibraryLoader(); } </script>
+
+
 
 </body>
 </html>
