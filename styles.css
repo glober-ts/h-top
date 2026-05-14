@@ -2411,7 +2411,7 @@ body.noScroll{ overflow:hidden; }
 #toTopBtn{
   position:fixed;
   right:20px;
-  bottom:10px;
+  bottom:70px;
   z-index:350;
   opacity:0;
   visibility:hidden;
