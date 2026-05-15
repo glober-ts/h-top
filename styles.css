@@ -4715,6 +4715,7 @@ body.noScroll{ overflow:hidden; }
   line-height:1;
   letter-spacing:.08em;
   white-space:nowrap;
+  margin-left: 12px;
 }
 
 .drawerShopLabel{
