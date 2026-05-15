@@ -4680,3 +4680,10 @@ body.noScroll{ overflow:hidden; }
 @media (max-width:767px){
   .guide{min-height:82px;}
 }
+
+/* v146: keep login/mypage out of the SP header; drawer buttons remain the SP member links */
+@media (max-width:979px){
+  .headerQuick .icoBtn--member{
+    display:none;
+  }
+}
